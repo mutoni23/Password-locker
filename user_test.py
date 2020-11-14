@@ -14,6 +14,7 @@ class TestUser(unittest.TestCase):
         '''
         self.new_user = User("Vivine", "Porter", "HPorter", "porterwashere")
 
+
     def test_init(self):
         self.assertEqual(self.new_user.first_name, "Vivine")
         self.assertEqual(self.new_user.last_name, "Porter")
