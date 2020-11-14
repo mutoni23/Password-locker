@@ -11,3 +11,11 @@ Users can create a password locker account.
 Users have an option of putting in a password that they want to use for the new credential account.
 
 # Password-locker requirememts
+Python3.6 version
+Terminal
+
+# INSTALLATIONS
+1. Internet Connection
+2. Python3.6 installed
+3. Github account
+4. Clone it 
