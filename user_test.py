@@ -76,6 +76,7 @@ class TestUser(unittest.TestCase):
         found_user = User.find_by_username("ALincon")
         self.assertEqual(found_user.user_name,"ALincon")
 
+
     def test_find_user_by_password(self):
         '''
         test to check if we can find a user by their password
