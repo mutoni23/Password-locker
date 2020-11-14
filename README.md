@@ -10,7 +10,7 @@ Users can create new account credentials in the application.
 Users can create a password locker account.
 Users have an option of putting in a password that they want to use for the new credential account.
 
-# Password-locker requirememts
+# Password-locker requirements
 Python3.6 version
 Terminal
 
@@ -22,3 +22,7 @@ Terminal
 5. cd into your project folder
 6. Run the command (python3.6 run.py)
 7. and follow instructions.
+
+# COPYRIGHT (c) 2020 
+MUTONI Vivine :mutoniv5@gmail.com
+Twitter:@umutonivivine
