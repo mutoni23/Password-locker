@@ -18,4 +18,7 @@ Terminal
 1. Internet Connection
 2. Python3.6 installed
 3. Github account
-4. Clone it 
+4. Clone the project to your device
+5. cd into your project folder
+6. Run the command (python3.6 run.py)
+7. and follow instructions.
