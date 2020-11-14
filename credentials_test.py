@@ -21,7 +21,7 @@ class TestAccount(unittest.TestCase):
 
     def test_delete_account(self):
         self.new_account.save_account()
-        test_account = Account("Twitter", "James_Lebron", "basketballislife")
+        test_account = Account("Twitter", "Mutoni", "basketballislife")
         test_account.save_account()
 
         test_account.delete_account()
