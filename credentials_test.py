@@ -29,7 +29,7 @@ class TestAccount(unittest.TestCase):
 
     def test_find_account_by_name(self):
         self.new_account.save_account()
-        test_account = Account("Medium", "Nela", "investingissmart")
+        test_account = Account("Medium", "Nela", "001")
         test_account.save_account()
 
         found_account = Account.find_by_accountName("Medium")
