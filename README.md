@@ -6,3 +6,8 @@ This is a Password Locker application that will help a user to manage their pass
 On Average, a person has at least 7 different accounts he or she has signed into, be it email, social media, entertainment or job portal accounts. It becomes really hard to remember all those passwords and even create new ones.This app will help.
 
 # User Story
+Users can create new account credentials in the application.
+Users can create a password locker account.
+Users have an option of putting in a password that they want to use for the new credential account.
+
+# Password-locker requirememts
