@@ -88,6 +88,7 @@ class TestUser(unittest.TestCase):
 
         found_password = User.find_by_userpassword("moneyisgood")
         self.assertEqual(found_password.password,"moneyisgood")
+        
 
     def test_display_user_information(self):
         '''
