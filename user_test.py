@@ -12,20 +12,20 @@ class TestUser(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_user = User("Vivine", "Porter", "HPorter", "porterwashere")
+        self.new_user = User("Vivine", "Mutoni", "MVivi", "viviMuto")
 
 
     def test_init(self):
         self.assertEqual(self.new_user.first_name, "Vivine")
-        self.assertEqual(self.new_user.last_name, "Porter")
-        self.assertEqual(self.new_user.user_name, "HPorter")
-        self.assertEqual(self.new_user.password, "porterwashere")
+        self.assertEqual(self.new_user.last_name, "Mutoni")
+        self.assertEqual(self.new_user.user_name, "Mvivi")
+        self.assertEqual(self.new_user.password, "viviMuto")
 
     def test_save_user(self):
         '''
         test_save_user test case to test if the user object is saved into the user listed
         '''
-        self.new_user.save_user() #saving the new user_list
+        self.new_user.save_user() 
         self.assertEqual(len(User.user_list),1)
 
 
@@ -45,7 +45,7 @@ class TestUser(unittest.TestCase):
         '''
         
         self.new_user.save_user()
-        test_user = User("John", "Wick", "JWick", "dontkillmydog")
+        test_user = User("Henry", "Ian", "Hian", "lifesgood")
         test_user.save_user()
 
         self.assertEqual(len(User.user_list),2)
@@ -57,10 +57,10 @@ class TestUser(unittest.TestCase):
         '''
 
         self.new_user.save_user()
-        test_user = User("Abraham", "Lincon", "ALincon", "americaisgreat")
+        test_user = User("Robert", "Nesta", "NErob", "jahbless")
         test_user.save_user()
 
-        self.new_user.delete_user() #Deleting a user object
+        self.new_user.delete_user() 
         self.assertEqual(len(User.user_list),1)
 
 
@@ -70,11 +70,11 @@ class TestUser(unittest.TestCase):
         '''
 
         self.new_user.save_user()
-        test_user = User("Abraham", "Lincon", "ALincon", "americaisgreat")
+        test_user = User("Maya", "Angelou", "MAyang", "untoldstory")
         test_user.save_user()
 
-        found_user = User.find_by_username("ALincon")
-        self.assertEqual(found_user.user_name,"ALincon")
+        found_user = User.find_by_username("MAyang")
+        self.assertEqual(found_user.user_name,"MAyang")
 
 
     def test_find_user_by_password(self):
@@ -83,11 +83,11 @@ class TestUser(unittest.TestCase):
         '''
 
         self.new_user.save_user()
-        test_user = User("Mark", "Cuban", "MCuban", "moneyisgood")
+        test_user = User("Cicely", "Tyson", "CTyson", "thesound")
         test_user.save_user()
 
-        found_password = User.find_by_userpassword("moneyisgood")
-        self.assertEqual(found_password.password,"moneyisgood")
+        found_password = User.find_by_userpassword("thesound")
+        self.assertEqual(found_password.password,"thesound")
 
 
     def test_display_user_information(self):
